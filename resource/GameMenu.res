@@ -1,39 +1,58 @@
-"GameMenu"
+"GameMenu" [$WIN32]
 {
-
-//G-Mang HUD
-
-	"ReplayBrowserButton"
+	"CreateServerButton"
 	{
-		"subimage" "glyph_tv"
-		"label" "#GameUI_GameMenu_ReplayDemos"
-		"command" "engine replay_reloadbrowser"
-	}
-	"CharacterSetupButton"
-	{
-		"subimage" "glyph_items"
-		"label" "#MMenu_CharacterSetup"
-		"command" "engine open_charinfo"
-	}
-	"CreateServer"
-	{
-		"subimage" "glyph_create"
 		"label" "#GameUI_GameMenu_CreateServer"
 		"command" "OpenCreateMultiplayerGameDialog"
+		"OnlyAtMenu" "1"
+		"tooltip" "#GameUI_GameMenu_CreateServer"
 	}
-	"FindServers"
+	"ResumeGameButton"
 	{
-		"subimage" "glyph_server_browser"
-		"label" "#MMenu_Servers"
-		"command" "OpenServerBrowser"
-	} 
-	"Resume"
-	{
-		"subimage" "glyph_quit"
-		"label" "#GameUI_GameMenu_ResumeGame"
-		"command" "ResumeGame"
-		"OnlyInGame" "1"
+		"label"			"#MMenu_ResumeGame"
+		"command"		"ResumeGame"
+		"OnlyInGame"	"1"
+		"subimage" "icon_resume"
 	}
+	"FindAGameButton"
+	{
+		"label" "#MMenu_FindAGame" 
+		"command" "toggle_play_menu"
+		"subimage" "glyph_multiplayer"
+		"OnlyAtMenu"	"1"
+	}
+
+	"FindAGameButtonHalfWidth"
+	{
+		"label" "#MMenu_FindAGame" 
+		"command" "toggle_play_menu"
+		"subimage" "glyph_multiplayer"
+		"OnlyInGame"	"1"
+	}
+
+	"VRModeButton"
+	{
+		"label" "#MMenu_VRMode_Activate"
+		"command" "engine vr_toggle"
+		"subimage" "glyph_vr"
+		"OnlyWhenVREnabled" "1"
+	}
+
+	"GeneralStoreButton"
+	{
+		"label" "#MMenu_Shop"
+		"command" "engine open_store"
+		"subimage" "glyph_store"
+	}	
+	"CharacterSetupButton"
+	{
+		"label" "#MMenu_CharacterSetup"
+		"command" "engine open_charinfo"
+		"subimage" "glyph_items"
+	}
+
+	// These buttons are only shown while in-game
+	// and also are positioned by the .res file
 	"CallVoteButton"
 	{
 		"label"			""
@@ -58,105 +77,12 @@
 		"subimage" "icon_whistle"
 		"tooltip" "#MMenu_RequestCoach"
 	}
-	// These buttons get positioned by the MainMenuOverride.res
-	"RefreshHUDButton"
+	"ReportPlayerButton"
 	{
-		"label" "RefreshHUDButton"
-		"command" "engine hud_reloadscheme"
-		"tooltip" "Refresh G-Mang HUD"
-		"OnlyInGame" "1"
-	}
-	"InterfaceButton"
-	{
-		"label" "InterfaceButton"
-		"command" "engine ToggleInterface"
-		"tooltip" "Toggle Interface"
-		"OnlyInGame" "1"
-	}
-	"HomeServerButton"
-	{
-		"label" "HomeServerButton"
-		"command" "engine JoinHomeServer"
-		"tooltip" "Join Home Server"
-	}
-	"IdleButton"
-	{
-		"label" "IdleButton"
-		"command" "engine CreateIdle"
-		"tooltip" "Local Idle"
-	}
-	"PlayPVEButton"
-	{
-		"label" "PlayPVEButton" 
-		"command" "playpve"
-		"tooltip" "#MMenu_PlayCoop"
-		"OnlyAtMenu" "1"
-	}
-	"Bookmark1Button"
-	{
-		"label" "Bookmark1Button"
-		"command" "engine JoinBookmark1"
-		"tooltip" "Join Bookmark #1"
-	}
-	"Bookmark2Button"
-	{
-		"label" "Bookmark2Button"
-		"command" "engine JoinBookmark2"
-		"tooltip" "Join Bookmark #2"
-	}
-	"Bookmark3Button"
-	{
-		"label" "Bookmark3Button"
-		"command" "engine JoinBookmark3"
-		"tooltip" "Join Bookmark #3"
-	}
-	"QuickplayButton"
-	{
-		"label" "QuickplayButton"
-		"command" "quickplay"
-		"tooltip" "#MMenu_PlayMultiplayer"
-	}
-	"OfflinePracticeButton"
-	{
-		"label" "#GameUI_GameMenu_OfflinePractice"
-		"command" "offlinepractice"
-		"tooltip" "#GameUI_GameMenu_OfflinePractice"
-	}
-	"TestServerButton"
-	{
-		"label" "TestServerButton"
-		"command" "engine CreateTestServer"
-		"tooltip" "Local Test Server"
-	}
-	"LoadoutButton"
-	{
-		"label" "LoadoutButton"
-		"command" "engine open_charinfo_direct"
-		"tooltip" "Class Loadout"
-		"OnlyInGame" "1"
-	}
-	"GeneralStoreButton"
-	{
-		"label" "#MMenu_Shop"
-		"command" "engine open_store"
-		"tooltip" "#MMenu_Shop"
-	}
-	"AchievementsButton"
-	{
-		"label" "AchievementsButton"
-		"command" "OpenAchievementsDialog"
-		"tooltip" "#GameUI_GameMenu_Achievements"
-	}
-	"TF2SettingsButton"
-	{
-		"label" "TF2SettingsButton"
-		"command" "opentf2options"
-		"tooltip" "Advanced Options"
-	}
-	"SteamWorkshopButton"
-	{
-		"label" "SteamWorkshop"
-		"command" "engine OpenSteamWorkshopDialog"
-		"tooltip" "Steam Workshop"
+		"label"			""
+		"command"		"OpenReportPlayerDialog"
+		"OnlyInGame"	"1"
+		"subimage"		"glyph_alert"
+		"tooltip"		"#MMenu_ReportPlayer"
 	}
 }

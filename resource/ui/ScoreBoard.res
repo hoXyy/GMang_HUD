@@ -3017,43 +3017,6 @@
 				"tall"			"20"
 			}
 		}												
-		"MapName"
-		{
-			"ControlName"	"CExLabel"
-			"fieldName"		"mapname"
-			"font"			"ScoreboardVerySmallOutline"
-			"labelText"		"%mapname%"
-			"textAlignment"		"east"
-			"textAlignment_minmode"		"west"
-			"xpos_minmode"			"5"
-			"ypos_minmode"			"371"
-			"wide_minmode"			"245"
-			"tall_minmode"			"12"
-			"xpos"			"c0"
-			"ypos"			"54"
-			"wide"			"245"
-			"tall"			"12"
-			"zpos"			"3"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"fgcolor"		"SBMap"
-			
-			if_mvm
-			{
-				"font"			"ScoreboardVerySmallOutline"
-				"fgcolor"		"SBMap"
-				"aplha"			"255"
-				"textAlignment"		"west"
-				"xpos"			"5"
-				"ypos"			"371"
-				"wide"			"245"
-				"tall"			"12"
-				"fgcolor"		"SBStats"
-				"alpha"		"255"
-			}
-		}
 		"Assists"
 		{
 			"ControlName"		"CExLabel"
@@ -3597,7 +3560,30 @@
 				"wide"			"50"
 				"tall"			"20"
 			}
-		}						
+		}
+	"MapName"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"mapname"
+		"font"			"ScoreboardVerySmall"
+		"labelText"		"%mapname%"
+		"textAlignment"	"east"
+ 		"xpos"			"415"
+		"ypos"			"385"
+		"zpos"			"3"
+		"wide"			"165"
+		"tall"			"0"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"fgcolor"		"236 227 203 0"
+
+		if_mvm
+		{
+			"visible"		"0"
+		}
+	}		
 		"Headshots"
 		{
 			"ControlName"		"CExLabel"
@@ -3758,6 +3744,40 @@
 				"tall"			"20"
 			}
 		}
+		"Damage"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"Damage"
+			"font"			"ScoreboardVerySmallOutline"
+			"labelText"		"%damage%"
+			"textAlignment"	"west"
+			"xpos"			"c0"
+			"ypos"			"51"
+			"zpos"			"3"
+			"wide"			"35"
+			"tall"			"20"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+		}	
+		"DamageLabel"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"DamageLabel"
+			"font"			"ScoreboardVerySmallOutline"
+			"labelText"		"#TF_Scoreboard_Damage"
+			"textAlignment"	"east"
+			"xpos"			"c-100"
+			"ypos"			"51"
+			"zpos"			"3"
+			"wide"			"95"
+			"tall"			"20"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+		}		
 	}
 	"ShadedBar"
 	{
@@ -3841,5 +3861,41 @@
 		"visible"		"0"
 		"enabled"		"0"
 	}
+	"MapName"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"mapname"
+		"font"			"ScoreboardVerySmall"
+		"labelText"		"%mapname%"
+		"textAlignment"		"east"
+		"textAlignment_minmode"		"west"
+		"xpos_minmode"			"5"
+		"ypos_minmode"			"371"
+		"wide_minmode"			"245"
+		"tall_minmode"			"12"
+		"xpos"			"c0"
+		"ypos"			"54"
+		"wide"			"245"
+		"tall"			"12"
+		"zpos"			"3"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"fgcolor"		"SBMap"
+		
+		if_mvm
+		{
+			"font"			"ScoreboardVerySmallOutline"
+			"fgcolor"		"SBMap"
+			"aplha"			"255"
+			"textAlignment"		"west"
+			"xpos"			"5"
+			"ypos"			"371"
+			"wide"			"245"
+			"tall"			"12"
+			"fgcolor"		"SBStats"
+			"alpha"		"255"
+		}	
 }
 
