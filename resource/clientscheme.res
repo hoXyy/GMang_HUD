@@ -38,15 +38,15 @@ Scheme
 					//"UberchargeOutline"		"NotVisible"
 				
 				/// HIDE TINY UBERCHARGE TEXT UNDER CROSSHAIR //
-					//"UberchargeTextTiny"			"NotVisible"
-					//"UberchargeTextTinyOutline"		"NotVisible"
-					//"UberchargeTextTinyShadow"		"NotVisible"
-					//"UberchargeFullTinyText1"	"NotVisible"
-					//"UberchargeFullTinyText2"	"NotVisible"
-					//"UberchargeFullTinyText3"	"NotVisible"
-					//"UberchargeFullTinyText4"	"NotVisible"
-					//"UberchargeFullTinyText5"	"NotVisible"
-					//"UberchargeFullTinyText6"	"NotVisible"
+					"UberchargeTextTiny"			"NotVisible"
+					"UberchargeTextTinyOutline"		"NotVisible"
+					"UberchargeTextTinyShadow"		"NotVisible"
+					"UberchargeFullTinyText1"	"NotVisible"
+					"UberchargeFullTinyText2"	"NotVisible"
+					"UberchargeFullTinyText3"	"NotVisible"
+					"UberchargeFullTinyText4"	"NotVisible"
+					"UberchargeFullTinyText5"	"NotVisible"
+					"UberchargeFullTinyText6"	"NotVisible"
 				
 				/// ALTERNATE PLAYER HEALTH COLORS /////////////
 					//"PlayerHPColorSelf"				"ColorWhite"
